@@ -10,14 +10,14 @@ export class MartService {
     { id: 1, name: 'Poké Ball', price: 200, description: 'A standard item used to catch a wild Pokémon.', category: 'Poke Ball', icon: '🔴' },
     { id: 2, name: 'Great Ball', price: 600, description: 'A high-performance Poké Ball that provides a higher success rate for catching wild Pokémon than a standard Poké Ball.', category: 'Poke Ball', icon: '🔵' },
     { id: 3, name: 'Ultra Ball', price: 1200, description: 'An ultra-high-performance Poké Ball that provides a higher success rate than a Great Ball.', category: 'Poke Ball', icon: '🟡⚫' },
-    { id: 4, name: 'Premier Ball', price: 'Out of Stock', description: 'A rare Ball made to commemorate a special event.', category: 'Poke Ball', icon: '🔴⚪✨' },
+    { id: 4, name: 'Premier Ball', price: 300, description: 'A rare Ball made to commemorate a special event.', category: 'Poke Ball', icon: '🔴⚪✨' },
     
     // Healing Items
-    { id: 5, name: 'Potion', price: 300, description: 'Restores the HP (Hit Points) of a single Pokémon by 20 points.', category: 'Healing item', icon: '🧪' },
-    { id: 6, name: 'Super Potion', price: 700, description: 'Restores the HP of a single Pokémon by 50 points.', category: 'Healing item', icon: '🧪' },
-    { id: 7, name: 'Hyper Potion', price: 1200, description: 'Restores the HP of a single Pokémon by 200 points.', category: 'Healing item', icon: '🧪' },
-    { id: 8, name: 'Max Potion', price: 2500, description: 'Fully restores the HP of a single Pokémon.', category: 'Healing item', icon: '🧪' },
-    { id: 9, name: 'Full Restore', price: 3000, description: 'Fully restores both the HP and any major status conditions of a Pokémon.', category: 'Healing item', icon: '🧪' },
+    { id: 5, name: 'Potion', price: 300, description: 'Restores the HP (Hit Points) of a single Pokémon by 20 points.', category: 'Healing Item', icon: '🧪' },
+    { id: 6, name: 'Super Potion', price: 700, description: 'Restores the HP of a single Pokémon by 50 points.', category: 'Healing Item', icon: '🧪' },
+    { id: 7, name: 'Hyper Potion', price: 1200, description: 'Restores the HP of a single Pokémon by 200 points.', category: 'Healing Item', icon: '🧪' },
+    { id: 8, name: 'Max Potion', price: 2500, description: 'Fully restores the HP of a single Pokémon.', category: 'Healing Item', icon: '🧪' },
+    { id: 9, name: 'Full Restore', price: 3000, description: 'Fully restores both the HP and any major status conditions of a Pokémon.', category: 'Healing Item', icon: '🧪' },
     
     // Status Healing
     { id: 10, name: 'Antidote', price: 100, description: 'Cures a Pokémon of the Poison status condition.', category: 'Status Healing', icon: '☣️' },

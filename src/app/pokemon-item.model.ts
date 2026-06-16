@@ -3,7 +3,7 @@ export interface PokemonItem{
     name: string;
     price: number;
     description: string;
-    category: 'Poke Ball' | 'Healing Items' | 'Status Healing' | 'Escape Items';
+    category: 'Poke Ball' | 'Healing Item' | 'Status Healing' | 'Escape Item';
     icon: string;
 
 }

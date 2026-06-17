@@ -1,1 +1,43 @@
-<p>checkout-cart works!</p>
+<div class="cart-container">
+    <h2>🛍️ Active Shopping Bag Summary</h2>
+    
+    <div class="cart-wrapper">
+      <div class="items-panel">
+        @for (item of cartService.cart(); track item.item.id) {
+          <div class="cart-row">
+            <img [src]="item.item.imageUrl" [alt]="item.item.name" class="cart-row-sprite" />
+            <div class="details">
+              <h4>{{ item.item.name }}</h4>
+              <small>{{ item.item.category }}</small>
+            </div>
+            <div class="math-control">
+              <span>{{ item.item.price }} ₽ * {{ item.quantity }}</span>
+              <strong>{{ item.item.price * item.quantity }} ₽</strong>
+            </div>
+            <button class="drop-btn" (click)="cartService.removeFromCart(item.item.id)">❌</button>
+          </div>
+        } @empty {
+          <div class="empty-state">
+            <p>Your shopping bag contains no active items.</p>
+          </div>
+        }
+      </div>
+  
+      <div class="receipt-panel">
+        <h3>Invoice Breakdown</h3>
+        <div class="receipt-line">
+          <span>Staged Units:</span>
+          <strong>{{ cartService.cartCount() }} items</strong>
+        </div>
+        <div class="receipt-line total">
+          <span>Total Balance Due:</span>
+          <span class="sum-total">{{ cartService.cartTotal() }} ₽</span>
+        </div>
+        
+        <div class="actions">
+          <button class="clear-btn" [disabled]="cartService.cartCount() === 0" (click)="cartService.clearCart()">Dump All</button>
+          <button class="pay-btn" [disabled]="cartService.cartCount() === 0" (click)="onCheckout()">Process Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>

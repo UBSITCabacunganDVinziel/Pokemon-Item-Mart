@@ -1,5 +1,6 @@
 import { Injectable, signal, computed } from '@angular/core';
-import { CartItem, PokemonItem } from './pokemoninfo.model';
+import { CartItem } from './pokemon-item.model';
+import { PokemonItem } from './pokemon-item.model';
 
 @Injectable({
   providedIn: 'root'

@@ -1,6 +1,7 @@
 import { Component, inject, computed } from '@angular/core';
 import { MartService } from '../pokemart-service';
 import { CartService } from '../cart-service';
+import { PokemonItem } from '../pokemon-item.model';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class PokeBall {
     this.martService.items().filter(i => i.category === 'Poke Ball')
   );
 
-  onAddItem(item: MartItem) {
+  onAddItem(item: PokemonItem) {
     this.cartService.addToCart(item);
   }
 }

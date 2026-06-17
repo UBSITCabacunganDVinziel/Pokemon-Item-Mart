@@ -1,6 +1,7 @@
 import { Component, inject, computed } from '@angular/core';
 import { MartService } from '../pokemart-service';
 import { CartService } from '../cart-service';
+import { PokemonItem } from '../pokemon-item.model';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class EscapeItem {
     this.martService.items().filter(i => i.category === 'Escape Item')
   );
 
-  onAddItem(item: MartItem) {
+  onAddItem(item: PokemonItem) {
     this.cartService.addToCart(item);
   }
 }

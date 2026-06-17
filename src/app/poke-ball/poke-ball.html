@@ -1,1 +1,14 @@
-<p>poke-ball works!</p>
+<div class="view-header">
+    <h2>Poké Ball Row Showcase</h2>
+    <p>Standard issue and high-performance capturing mechanics.</p>
+  </div>
+  <div class="products-grid">
+    @for (item of filtered(); track item.id) {
+      <div class="product-item">
+        <img [src]="item.icon" [alt]="item.name">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.price }} ₽</p>
+        <button (click)="cartService.addToCart(item)">Add to Bag</button>
+      </div>
+    }
+  </div>

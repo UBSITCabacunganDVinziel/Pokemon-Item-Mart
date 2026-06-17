@@ -1,0 +1,119 @@
+.cart-container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .cart-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .items-panel {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+  }
+  .cart-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .cart-row:last-child {
+    border-bottom: none;
+  }
+  .cart-row-sprite {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #eceff1;
+    image-rendering: pixelated;
+  }
+  .details {
+    flex-grow: 1;
+  }
+  .details h4 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  .details small {
+    color: #7f8c8d;
+  }
+  .math-control {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  .drop-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+  .receipt-panel {
+    background: #fdfdfd;
+    border: 1px solid #dcdde1;
+    border-radius: 12px;
+    padding: 25px;
+    height: fit-content;
+  }
+  .receipt-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  }
+  .total {
+    border-top: 2px dashed #bdc3c7;
+    padding-top: 15px;
+    margin-top: 20px;
+  }
+  .sum-total {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #e74c3c;
+  }
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+  }
+  .pay-btn {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .pay-btn:hover:not(:disabled) {
+    background: #27ae60;
+  }
+  .clear-btn {
+    background: #95a5a6;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .clear-btn:hover:not(:disabled) {
+    background: #7f8c8d;
+  }
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

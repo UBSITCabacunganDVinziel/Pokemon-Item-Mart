@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, inject, computed } from '@angular/core';
 import { MartService } from '../pokemart-service';
 import { CartService } from '../cart-service';
-import { PokemonItem } from '../pokemon-item.model';
+
 
 @Component({
   selector: 'app-poke-ball',
+  standalone: true,
   imports: [],
   templateUrl: './poke-ball.html',
   styleUrl: './poke-ball.css',

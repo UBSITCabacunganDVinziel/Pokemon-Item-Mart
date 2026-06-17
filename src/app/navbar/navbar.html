@@ -1,10 +1,18 @@
-<nav class="navbar">
-    <div class="nav-brand">Pokémon League Regional Registry</div>
-    <div class="nav-links">
-      <a routerLink="/home" routerLinkActive="active-link">Home</a>
-      <a routerLink="/poke-balls" routerLinkActive="active-link">Poke Ball</a>
-      <a routerLink="/healing-items" routerLinkActive="active-link">Healing Item</a>
-      <a routerLink="/status-healing" routerLinkActive="active-link">Status Healing</a>
-      <a routerLink="/escape-items" routerLinkActive="active-link">Escape Item</a>
+  <header class="navbar-frame">
+    <div class="brand-unit">
+      <span class="brand-logo">🏪</span>
+      <h1>PokéMart Terminal</h1>
     </div>
-  </nav>
+    
+    <nav class="nav-cluster">
+      <a routerLink="/home" routerLinkActive="active-tab">Home</a>
+      <a routerLink="/poke-balls" routerLinkActive="active-tab">Poke Ball</a>
+      <a routerLink="/healing-items" routerLinkActive="active-tab">Healing item</a>
+      <a routerLink="/status-healing" routerLinkActive="active-tab">Status Healing</a>
+      <a routerLink="/escape-items" routerLinkActive="active-tab">Escape Item</a>
+      
+      <a routerLink="/checkout" routerLinkActive="active-tab" class="bag-indicator">
+        💼 Bag ({{ cartService.cartCount() }})
+      </a>
+    </nav>
+  </header>

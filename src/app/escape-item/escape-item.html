@@ -1,1 +1,14 @@
-<p>escape-item works!</p>
+<div class="view-header">
+    <h2>Escape Equipment & Repellent Row</h2>
+    <p>Field traversal mechanisms and protective encounter management units.</p>
+  </div>
+  <div class="products-grid">
+    @for (item of filtered(); track item.id) {
+      <div class="product-item">
+        <img [src]="item.icon" [alt]="item.name">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.price }} ₽</p>
+        <button (click)="cartService.addToCart(item)">Add to Bag</button>
+      </div>
+    }
+  </div>

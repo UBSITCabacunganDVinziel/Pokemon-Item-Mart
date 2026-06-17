@@ -12,10 +12,10 @@ import { PokemonItem } from '../pokemon-item.model';
   styleUrl: './status-healing.css',
 })
 export class StatusHealing {
-  private martService = inject(MartService);
-  private cartService = inject(CartService);
+   martService = inject(MartService);
+   cartService = inject(CartService);
 
-  filteredItems = computed(() => 
+  filtered = computed(() => 
     this.martService.items().filter(i => i.category === 'Status Healing')
   );
 

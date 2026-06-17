@@ -12,11 +12,11 @@ import { PokemonItem } from '../pokemon-item.model';
   styleUrl: './healing-item.css',
 })
 export class HealingItem {
-  private martService = inject(MartService);
-  private cartService = inject(CartService);
+   martService = inject(MartService);
+   cartService = inject(CartService);
 
-  filteredItems = computed(() => 
-    this.martService.items().filter(i => i.category === 'Healing item')
+  filtered = computed(() => 
+    this.martService.items().filter(i => i.category === 'Healing Item')
   );
 
   onAddItem(item: PokemonItem) {

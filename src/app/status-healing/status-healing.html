@@ -1,1 +1,14 @@
-<p>status-healing works!</p>
+<div class="view-header">
+    <h2>Status Healing Remedies Row</h2>
+    <p>Targeted medical sprays designed to immediately eliminate clinical status defects.</p>
+  </div>
+  <div class="products-grid">
+    @for (item of filtered(); track item.id) {
+      <div class="product-item">
+        <img [src]="item.icon" [alt]="item.name">
+        <h3>{{ item.name }}</h3>
+        <p>{{ item.price }} ₽</p>
+        <button (click)="cartService.addToCart(item)">Add to Bag</button>
+      </div>
+    }
+  </div>

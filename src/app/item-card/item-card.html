@@ -1,1 +1,12 @@
-<p>item-card works!</p>
+<div class="card" [ngClass]="{'premium-item': item().price >= 1000, 'budget-item': item().price < 1000}">
+    <div class="item-badge-wrapper">
+      <img [src]="item().imageUrl" [alt]="item().name" class="item-sprite-img" />
+    </div>
+    <h3>{{ item().name }}</h3>
+    <p class="description">{{ item().description }}</p>
+    
+    <div class="footer-control">
+      <span class="price-tag">{{ item().price }} ₽</span>
+      <button class="buy-btn" (click)="onPurchaseClick()">Add to Bag</button>
+    </div>
+  </div>

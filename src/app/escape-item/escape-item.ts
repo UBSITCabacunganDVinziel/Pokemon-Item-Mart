@@ -22,3 +22,4 @@ export class EscapeItem {
     this.cartService.addToCart(item);
   }
 }
+

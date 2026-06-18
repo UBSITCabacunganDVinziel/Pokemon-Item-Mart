@@ -3,7 +3,7 @@
   <p>Medical supplies engineered for reliable hit-point recovery.</p>
 </div>
 <div class="products-grid">
-  @for (prod of filteredItems(); track prod.id) {
+  @for (prod of filtered(); track prod.id) {
     <app-item-card [item]="prod" (purchase)="onAddItem($event)"></app-item-card>
   }
 </div>

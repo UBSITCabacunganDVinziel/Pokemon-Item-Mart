@@ -1,14 +1,9 @@
 <div class="view-header">
-    <h2>Healing Item Recovery Row</h2>
-    <p>Top tier hit-point recovery and medical restorative tonics.</p>
-  </div>
-  <div class="products-grid">
-    @for (item of filtered(); track item.id) {
-      <div class="product-item">
-        <img [src]="item.icon" [alt]="item.name">
-        <h3>{{ item.name }}</h3>
-        <p>{{ item.price }} ₽</p>
-        <button (click)="cartService.addToCart(item)">Add to Bag</button>
-      </div>
-    }
-  </div>
+  <h2>🧪 Healing Items Department</h2>
+  <p>Medical supplies engineered for reliable hit-point recovery.</p>
+</div>
+<div class="products-grid">
+  @for (prod of filteredItems(); track prod.id) {
+    <app-item-card [item]="prod" (purchase)="onAddItem($event)"></app-item-card>
+  }
+</div>

@@ -7,6 +7,4 @@ import { RouterLink } from '@angular/router';
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
-export class Home {
-  clerkMessage = "Welcome to our PokéMart digital portal! Feel free to switch between any of our active retail stock rows on the display panel above.";
-}
+export class Home {}

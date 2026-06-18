@@ -1,13 +1,13 @@
 <nav class="navbar">
-  <div class="brand">🏪 PokéMart Kiosk</div>
-  <div class="nav-links">
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/poke-balls" routerLinkActive="active">Poke Balls</a>
-    <a routerLink="/healing-items" routerLinkActive="active">Healing Items</a>
-    <a routerLink="/status-healing" routerLinkActive="active">Status Healing</a>
-    <a routerLink="/escape-items" routerLinkActive="active">Escape Items</a>
-    <a routerLink="/checkout" routerLinkActive="active" class="bag-btn">
-      🛍️ Bag ({{ cartService.cartCount() }})
-    </a>
-  </div>
-</nav>
+    <div class="brand">🏪 PokéMart Kiosk</div>
+    <div class="nav-links">
+      <a routerLink="/home" routerLinkActive="active">Home</a>
+      <a routerLink="/poke-balls" routerLinkActive="active">Poke Ball</a>
+      <a routerLink="/healing-items" routerLinkActive="active">Healing item</a>
+      <a routerLink="/status-healing" routerLinkActive="active">Status Healing</a>
+      <a routerLink="/escape-items" routerLinkActive="active">Escape Item</a>
+      <a routerLink="/checkout" routerLinkActive="active" class="bag-link">
+        🛍️ Bag ({{ cartService.cartCount() }})
+      </a>
+    </div>
+  </nav>

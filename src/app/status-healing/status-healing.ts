@@ -1,25 +1,24 @@
-import { Component, inject, computed } from '@angular/core';
-import { MartService } from '../pokemart-service';
-import { CartService } from '../cart-service';
-import { PokemonItem } from '../pokemon-item.model';
+import { Component,inject,computed } from '@angular/core';
+import { CartService } from '../cart.service';
+import { MartService } from '../mart.service';
+import { MartItem } from '../mart.model';
 import { ItemCard } from '../item-card/item-card';
 
 @Component({
   selector: 'app-status-healing',
   standalone: true,
   imports: [ItemCard],
-  templateUrl: './status-healing.html',
-  styleUrl: './status-healing.css',
+  templateUrl: './status-healing.html'
 })
 export class StatusHealing {
-   martService = inject(MartService);
-   cartService = inject(CartService);
+  private martService = inject(MartService);
+  private cartService = inject(CartService);
 
-  filtered = computed(() => 
+  filteredItems = computed(() => 
     this.martService.items().filter(i => i.category === 'Status Healing')
   );
 
-  onAddItem(item: PokemonItem) {
+  onAddItem(item: MartItem) {
     this.cartService.addToCart(item);
   }
 }

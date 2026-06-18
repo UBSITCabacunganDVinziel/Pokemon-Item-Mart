@@ -1,9 +1,8 @@
-import { Component, inject, computed } from '@angular/core';
-import { MartService } from '../pokemart-service';
-import { CartService } from '../cart-service';
-import { PokemonItem } from '../pokemon-item.model';
+import { Component,inject,computed } from '@angular/core';
+import { CartService } from '../cart.service';
+import { MartService } from '../mart.service';
+import { MartItem } from '../mart.model';
 import { ItemCard } from '../item-card/item-card';
-
 
 @Component({
   selector: 'app-poke-ball',
@@ -13,14 +12,14 @@ import { ItemCard } from '../item-card/item-card';
   styleUrl: './poke-ball.css',
 })
 export class PokeBall {
-   martService = inject(MartService);
-   cartService = inject(CartService);
+  private martService = inject(MartService);
+  private cartService = inject(CartService);
 
-  filtered = computed(() => 
+  filteredItems = computed(() => 
     this.martService.items().filter(i => i.category === 'Poke Ball')
   );
 
-  onAddItem(item: PokemonItem) {
+  onAddItem(item: MartItem) {
     this.cartService.addToCart(item);
   }
 }

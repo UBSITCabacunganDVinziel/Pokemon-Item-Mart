@@ -1,0 +1,68 @@
+:global(body) {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f5f6fa;
+  }
+  .navbar-frame {
+    background: #ef5350;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .brand-unit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+  }
+  .brand-unit h1 {
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  .brand-logo {
+    font-size: 1.8rem;
+  }
+  .nav-cluster {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .nav-cluster a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  .nav-cluster a:hover {
+    background: rgba(255,255,255,0.15);
+  }
+  .active-tab {
+    background: #ffffff !important;
+    color: #ef5350 !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .bag-indicator {
+    border: 1px solid rgba(255,255,255,0.4);
+    margin-left: 10px;
+  }
+  .viewport {
+    padding: 40px;
+  }
+  ::ng-deep .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 25px;
+  }
+  ::ng-deep .view-header h2 {
+    margin: 0;
+    color: #2c3e50;
+  }
+  ::ng-deep .view-header p {
+    color: #7f8c8d;
+    margin: 5px 0 0 0;
+  }

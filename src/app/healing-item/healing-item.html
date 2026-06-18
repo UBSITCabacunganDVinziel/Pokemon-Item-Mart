@@ -1,9 +1,9 @@
 <div class="view-header">
-  <h2>🧪 Healing Items Department</h2>
-  <p>Medical supplies engineered for reliable hit-point recovery.</p>
-</div>
-<div class="products-grid">
-  @for (prod of filtered(); track prod.id) {
-    <app-item-card [item]="prod" (purchase)="onAddItem($event)"></app-item-card>
-  }
-</div>
+    <h2>🧪 Healing Items Department</h2>
+    <p>Medical supplies engineered for reliable hit-point recovery.</p>
+  </div>
+  <div class="products-grid">
+    @for (prod of filteredItems(); track prod.id) {
+      <app-item-card [item]="prod" (purchase)="onAddItem($event)"></app-item-card>
+    }
+  </div>

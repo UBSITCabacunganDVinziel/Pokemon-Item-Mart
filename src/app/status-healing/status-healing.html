@@ -3,7 +3,7 @@
   <p>Specialty remedy sprays formulated to immediately reverse clinical conditions.</p>
 </div>
 <div class="products-grid">
-  @for (prod of filteredItems(); track prod.id) {
+  @for (prod of filtered(); track prod.id) {
     <app-item-card [item]="prod" (purchase)="onAddItem($event)"></app-item-card>
   }
 </div>

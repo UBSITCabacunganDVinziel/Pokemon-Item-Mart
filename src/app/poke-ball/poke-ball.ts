@@ -23,3 +23,4 @@ export class PokeBall {
     this.cartService.addToCart(item);
   }
 }
+

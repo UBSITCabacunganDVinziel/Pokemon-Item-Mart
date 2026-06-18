@@ -2,12 +2,12 @@ import { Component, inject, computed } from '@angular/core';
 import { MartService } from '../pokemart-service';
 import { CartService } from '../cart-service';
 import { PokemonItem } from '../pokemon-item.model';
-
+import { ItemCard } from '../item-card/item-card';
 
 @Component({
   selector: 'app-status-healing',
   standalone: true,
-  imports: [],
+  imports: [ItemCard],
   templateUrl: './status-healing.html',
   styleUrl: './status-healing.css',
 })

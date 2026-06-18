@@ -5,7 +5,7 @@
       <div class="items-panel">
         @for (item of cartService.cart(); track item.item.id) {
           <div class="cart-row">
-            <img [src]="item.item.icon" [alt]="item.item.name" class="cart-row-sprite" />
+            <img [src]="item.item.imageUrl" [alt]="item.item.name" class="cart-row-sprite" />
             <div class="details">
               <h4>{{ item.item.name }}</h4>
               <small>{{ item.item.category }}</small>

@@ -12,3 +12,4 @@ import { CartService } from '../cart.service';
 export class Navbar {
   cartService = inject(CartService);
 }
+

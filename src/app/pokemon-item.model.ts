@@ -4,7 +4,7 @@ export interface PokemonItem{
     price: number;
     description: string;
     category: 'Poke Ball' | 'Healing Item' | 'Status Healing' | 'Escape Item';
-    icon: string;
+    imageUrl: string;
 
 }
 

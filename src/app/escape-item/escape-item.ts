@@ -2,12 +2,12 @@ import { Component, inject, computed } from '@angular/core';
 import { MartService } from '../pokemart-service';
 import { CartService } from '../cart-service';
 import { PokemonItem } from '../pokemon-item.model';
-
+import { ItemCard } from '../item-card/item-card';
 
 @Component({
   selector: 'app-escape-item',
   standalone: true,
-  imports: [],
+  imports: [ItemCard],
   templateUrl: './escape-item.html',
   styleUrl: './escape-item.css',
 })

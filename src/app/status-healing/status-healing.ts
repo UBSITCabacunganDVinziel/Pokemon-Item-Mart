@@ -22,3 +22,4 @@ export class StatusHealing {
     this.cartService.addToCart(item);
   }
 }
+

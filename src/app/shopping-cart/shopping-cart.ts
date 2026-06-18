@@ -16,3 +16,4 @@ export class ShoppingCart {
     this.cartService.clearCart();
   }
 }
+

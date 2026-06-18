@@ -3,7 +3,7 @@
   <p>Tactical exploration apparatus and field terrain repellents.</p>
 </div>
 <div class="products-grid">
-  @for (prod of filteredItems(); track prod.id) {
+  @for (prod of filtered(); track prod.id) {
     <app-item-card [item]="prod" (purchase)="onAddItem($event)"></app-item-card>
   }
 </div>
